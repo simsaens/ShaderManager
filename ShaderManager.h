@@ -36,7 +36,7 @@
 - (Shader*) shaderForName:(NSString*)name;
 
 - (Shader*) createShader:(NSString*)name withSettings:(NSDictionary*)settings;
-- (Shader*) createShader:(NSString*)name withSettingsFile:(NSString*)file;
+- (Shader*) createShader:(NSString*)name withFile:(NSString*)file;
 
 - (void) removeAllShaders;
 

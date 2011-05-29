@@ -24,6 +24,7 @@
 		DBEAAAB7139251D90064BCE6 /* Shader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAAB4139251D90064BCE6 /* Shader.m */; };
 		DBEAAAB8139251D90064BCE6 /* ShaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAAB6139251D90064BCE6 /* ShaderManager.m */; };
 		DBEAAABA139252850064BCE6 /* TestShader.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAAB9139252850064BCE6 /* TestShader.plist */; };
+		DBEAAABC13926DC40064BCE6 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAABB13926DC40064BCE6 /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		DBEAAAB5139251D90064BCE6 /* ShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderManager.h; path = ../ShaderManager.h; sourceTree = "<group>"; };
 		DBEAAAB6139251D90064BCE6 /* ShaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShaderManager.m; path = ../ShaderManager.m; sourceTree = "<group>"; };
 		DBEAAAB9139252850064BCE6 /* TestShader.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TestShader.plist; path = ../TestShader.plist; sourceTree = "<group>"; };
+		DBEAAABB13926DC40064BCE6 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.markdown; path = ../README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 		DBEAAA78139251740064BCE6 = {
 			isa = PBXGroup;
 			children = (
+				DBEAAABB13926DC40064BCE6 /* README.markdown */,
 				DBEAAAB2139251CC0064BCE6 /* ShaderManager */,
 				DBEAAA91139251750064BCE6 /* ShaderManagerDemo */,
 				DBEAAA86139251750064BCE6 /* Frameworks */,
@@ -197,6 +200,7 @@
 				DBEAAAA3139251750064BCE6 /* Shader.vsh in Resources */,
 				DBEAAAAC139251750064BCE6 /* ShaderManagerDemoViewController.xib in Resources */,
 				DBEAAABA139252850064BCE6 /* TestShader.plist in Resources */,
+				DBEAAABC13926DC40064BCE6 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

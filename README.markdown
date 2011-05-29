@@ -20,10 +20,12 @@ Using a Shader
 --------------
 ShaderManager consists of a singleton class (ShaderManager) and shader class (Shader)
 
-### Loading a shader from plist
-`[[ShaderManager sharedManager] createShader:@"MyShader" withSettingsFile:@"MyShader.plist"]`
+### Loading a shader from a plist
+`[[ShaderManager sharedManager] createShader:@"MyShader" withFile:@"MyShader.plist"]`
 
-Note that the plist file is looked up in the main bundle
+Note that the plist file is looked up in the main bundle. You can use the following method to load from an NSDictionary instead.
+
+`[[ShaderManager sharedManager] createShader:@"MyShader" withSettings:settingsDictionary]`
 
 ### Using a shader
 `[[ShaderManager sharedManager] useShader:@"MyShader"]`
@@ -34,7 +36,7 @@ Note that the plist file is looked up in the main bundle
 ### Setting attributes and uniforms on a shader
 
     //Uses "MyShader" and returns its shader object
-    Shader *myShader = [[ShaderManager sharedManager] userShader:@"MyShader"];
+    Shader *myShader = [[ShaderManager sharedManager] useShader:@"MyShader"];
 
     //Setting a uniform
     float translation = 10.0f;

@@ -134,7 +134,7 @@ static ShaderManager *sharedShaderManager;
     return shader;
 }
 
-- (Shader*) createShader:(NSString*)name withSettingsFile:(NSString*)file
+- (Shader*) createShader:(NSString*)name withFile:(NSString*)file
 {
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:file ofType:@""]];
     
