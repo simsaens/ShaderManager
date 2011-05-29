@@ -44,7 +44,7 @@
     if ([context API] == kEAGLRenderingAPIOpenGLES2)
     {
         //Load our simple test shader        
-        [[ShaderManager sharedManager] createShader:@"TestShader" withSettingsFile:@"TestShader.plist"];
+        [[ShaderManager sharedManager] createShader:@"TestShader" withFile:@"TestShader.plist"];
     }
     
     animating = FALSE;
