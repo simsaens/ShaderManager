@@ -120,6 +120,18 @@ static ShaderManager *sharedShaderManager;
     return currentShader;
 }
 
+- (void) useShaderObject:(Shader*)shader
+{
+    currentShader = shader;
+    
+    if( activeProgram != currentShader.programHandle )
+    {
+        glUseProgram(currentShader.programHandle);
+        
+        activeProgram = currentShader.programHandle;
+    }    
+}
+
 - (Shader*) shaderForName:(NSString *)name
 {
     return [shaderPrograms objectForKey:name];

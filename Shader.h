@@ -31,6 +31,7 @@
 
 - (id) initWithShaderSettings:(NSDictionary*)settings;
 
+- (void) useShader;
 - (int) uniformLocation:(NSString*)name;
 - (GLuint) attributeHandle:(NSString*)name;
 

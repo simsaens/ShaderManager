@@ -40,6 +40,8 @@
 - (Shader*) createShader:(NSString*)name withSettings:(NSDictionary*)settings;
 - (Shader*) createShader:(NSString*)name withFile:(NSString*)file;
 
+- (void) useShaderObject:(Shader*)shader;
+
 - (void) removeShader:(NSString*)name;
 - (void) removeAllShaders;
 

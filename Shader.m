@@ -13,6 +13,7 @@
 //
 
 #import "Shader.h"
+#import "ShaderManager.h"
 
 @implementation Shader
 
@@ -190,6 +191,13 @@
     [uniformHandles release];
     
     [super dealloc];
+}
+
+#pragma mark - Using the shader
+
+- (void) useShader
+{
+    [[ShaderManager sharedManager] useShaderObject:self];
 }
 
 #pragma mark - Access to uniforms and attributes
