@@ -124,6 +124,12 @@ static ShaderManager *sharedShaderManager;
 {
     Shader *shader = [[[Shader alloc] initWithShaderSettings:settings] autorelease];
     
+    Shader *existingShader = [self shaderForName:name];
+    if( existingShader != nil )
+    {
+        [self removeShader:name];
+    }
+    
     [shaderPrograms setObject:shader forKey:name];
     
     return shader;
