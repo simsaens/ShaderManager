@@ -9,14 +9,12 @@ Defining a Shader
 -----------------
 Shaders are defined as plist files (in addition to the regular vsh/fsh files). The plist is structured as follows:
 
-`
-Files
-    -- array containing the vsh and fsh files to be compiled and linked
-Attributes
-    -- array of strings specifying each attribute in the shader
-Uniforms
-    -- array of strings specifying each uniform in the shader
-`
+    Files
+        -- array containing the vsh and fsh files to be compiled and linked
+    Attributes
+        -- array of strings specifying each attribute in the shader
+    Uniforms
+        -- array of strings specifying each uniform in the shader
 
 Using a Shader
 --------------
@@ -34,18 +32,17 @@ Note that the plist file is looked up in the main bundle
 `Shader *myShader = [[ShaderManager sharedManager] currentShader]`
 
 ### Setting attributes and uniforms on a shader
-`
-//Uses "MyShader" and returns its shader object
-Shader *myShader = [[ShaderManager sharedManager] userShader:@"MyShader"];
 
-//Setting a uniform
-float translation = 10.0f;
-glUniform1f( [myShader uniformLocation:@"translation"], translation );
+    //Uses "MyShader" and returns its shader object
+    Shader *myShader = [[ShaderManager sharedManager] userShader:@"MyShader"];
 
-GLuint positionAttribute = [myShader attributeHandle:@"position"];
-glVertexAttribPointer( positionAttribute, 2, GL_FLOAT, 0, 0, vertices );
-glEnableVertexAttribArray( positionAttribute );
-`
+    //Setting a uniform
+    float translation = 10.0f;
+    glUniform1f( [myShader uniformLocation:@"translation"], translation );
+
+    GLuint positionAttribute = [myShader attributeHandle:@"position"];
+    glVertexAttribPointer( positionAttribute, 2, GL_FLOAT, 0, 0, vertices );
+    glEnableVertexAttribArray( positionAttribute );
 
 Sample Project
 --------------
