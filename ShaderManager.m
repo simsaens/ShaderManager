@@ -88,11 +88,6 @@ static ShaderManager *sharedShaderManager;
 
 #pragma mark - Memory
 
-- (void) removeAllShaders
-{
-    [shaderPrograms removeAllObjects];
-}
-
 - (void) dealloc
 {
     [shaderPrograms release];
@@ -139,6 +134,26 @@ static ShaderManager *sharedShaderManager;
     NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:file ofType:@""]];
     
     return [self createShader:name withSettings:dict];
+}
+
+- (void) removeAllShaders
+{
+    [shaderPrograms removeAllObjects];
+}
+
+- (void) removeShader:(NSString*)name
+{
+    Shader *shader = [self shaderForName:name];
+    
+    if( shader )
+    {
+        if( shader.programHandle == activeProgram )
+        {
+            glUseProgram(0);
+        }
+        
+        [shaderPrograms removeObjectForKey:name];
+    }
 }
 
 @end
