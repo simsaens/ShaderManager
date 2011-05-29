@@ -31,6 +31,8 @@
 
 + (ShaderManager*) sharedManager;
 
+- (NSArray*) allShaders;
+
 - (Shader*) currentShader;
 - (Shader*) useShader:(NSString*)name;
 - (Shader*) shaderForName:(NSString*)name;

@@ -96,6 +96,11 @@ static ShaderManager *sharedShaderManager;
 
 #pragma mark - Shader management
 
+- (NSArray*) allShaders
+{
+    return [shaderPrograms allValues];
+}
+
 - (Shader*) currentShader
 {
     return currentShader;
