@@ -1,0 +1,336 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DBEAAA88139251750064BCE6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEAAA87139251750064BCE6 /* UIKit.framework */; };
+		DBEAAA8A139251750064BCE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEAAA89139251750064BCE6 /* Foundation.framework */; };
+		DBEAAA8C139251750064BCE6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEAAA8B139251750064BCE6 /* CoreGraphics.framework */; };
+		DBEAAA8E139251750064BCE6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEAAA8D139251750064BCE6 /* QuartzCore.framework */; };
+		DBEAAA90139251750064BCE6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBEAAA8F139251750064BCE6 /* OpenGLES.framework */; };
+		DBEAAA96139251750064BCE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAA94139251750064BCE6 /* InfoPlist.strings */; };
+		DBEAAA99139251750064BCE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAA98139251750064BCE6 /* main.m */; };
+		DBEAAA9C139251750064BCE6 /* ShaderManagerDemoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAA9B139251750064BCE6 /* ShaderManagerDemoAppDelegate.m */; };
+		DBEAAA9F139251750064BCE6 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAA9D139251750064BCE6 /* MainWindow.xib */; };
+		DBEAAAA1139251750064BCE6 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAAA0139251750064BCE6 /* Shader.fsh */; };
+		DBEAAAA3139251750064BCE6 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAAA2139251750064BCE6 /* Shader.vsh */; };
+		DBEAAAA6139251750064BCE6 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAAA5139251750064BCE6 /* EAGLView.m */; };
+		DBEAAAA9139251750064BCE6 /* ShaderManagerDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAAA8139251750064BCE6 /* ShaderManagerDemoViewController.m */; };
+		DBEAAAAC139251750064BCE6 /* ShaderManagerDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAAAA139251750064BCE6 /* ShaderManagerDemoViewController.xib */; };
+		DBEAAAB7139251D90064BCE6 /* Shader.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAAB4139251D90064BCE6 /* Shader.m */; };
+		DBEAAAB8139251D90064BCE6 /* ShaderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEAAAB6139251D90064BCE6 /* ShaderManager.m */; };
+		DBEAAABA139252850064BCE6 /* TestShader.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBEAAAB9139252850064BCE6 /* TestShader.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DBEAAA83139251750064BCE6 /* ShaderManagerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShaderManagerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEAAA87139251750064BCE6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DBEAAA89139251750064BCE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DBEAAA8B139251750064BCE6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DBEAAA8D139251750064BCE6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DBEAAA8F139251750064BCE6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		DBEAAA93139251750064BCE6 /* ShaderManagerDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ShaderManagerDemo-Info.plist"; sourceTree = "<group>"; };
+		DBEAAA95139251750064BCE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBEAAA97139251750064BCE6 /* ShaderManagerDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShaderManagerDemo-Prefix.pch"; sourceTree = "<group>"; };
+		DBEAAA98139251750064BCE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBEAAA9A139251750064BCE6 /* ShaderManagerDemoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderManagerDemoAppDelegate.h; sourceTree = "<group>"; };
+		DBEAAA9B139251750064BCE6 /* ShaderManagerDemoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShaderManagerDemoAppDelegate.m; sourceTree = "<group>"; };
+		DBEAAA9E139251750064BCE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		DBEAAAA0139251750064BCE6 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		DBEAAAA2139251750064BCE6 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		DBEAAAA4139251750064BCE6 /* EAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		DBEAAAA5139251750064BCE6 /* EAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		DBEAAAA7139251750064BCE6 /* ShaderManagerDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShaderManagerDemoViewController.h; sourceTree = "<group>"; };
+		DBEAAAA8139251750064BCE6 /* ShaderManagerDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShaderManagerDemoViewController.m; sourceTree = "<group>"; };
+		DBEAAAAB139251750064BCE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ShaderManagerDemoViewController.xib; sourceTree = "<group>"; };
+		DBEAAAB3139251D90064BCE6 /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shader.h; path = ../Shader.h; sourceTree = "<group>"; };
+		DBEAAAB4139251D90064BCE6 /* Shader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Shader.m; path = ../Shader.m; sourceTree = "<group>"; };
+		DBEAAAB5139251D90064BCE6 /* ShaderManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShaderManager.h; path = ../ShaderManager.h; sourceTree = "<group>"; };
+		DBEAAAB6139251D90064BCE6 /* ShaderManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShaderManager.m; path = ../ShaderManager.m; sourceTree = "<group>"; };
+		DBEAAAB9139252850064BCE6 /* TestShader.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TestShader.plist; path = ../TestShader.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBEAAA80139251750064BCE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEAAA88139251750064BCE6 /* UIKit.framework in Frameworks */,
+				DBEAAA8A139251750064BCE6 /* Foundation.framework in Frameworks */,
+				DBEAAA8C139251750064BCE6 /* CoreGraphics.framework in Frameworks */,
+				DBEAAA8E139251750064BCE6 /* QuartzCore.framework in Frameworks */,
+				DBEAAA90139251750064BCE6 /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBEAAA78139251740064BCE6 = {
+			isa = PBXGroup;
+			children = (
+				DBEAAAB2139251CC0064BCE6 /* ShaderManager */,
+				DBEAAA91139251750064BCE6 /* ShaderManagerDemo */,
+				DBEAAA86139251750064BCE6 /* Frameworks */,
+				DBEAAA84139251750064BCE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBEAAA84139251750064BCE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAAA83139251750064BCE6 /* ShaderManagerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBEAAA86139251750064BCE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAAA87139251750064BCE6 /* UIKit.framework */,
+				DBEAAA89139251750064BCE6 /* Foundation.framework */,
+				DBEAAA8B139251750064BCE6 /* CoreGraphics.framework */,
+				DBEAAA8D139251750064BCE6 /* QuartzCore.framework */,
+				DBEAAA8F139251750064BCE6 /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBEAAA91139251750064BCE6 /* ShaderManagerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAAA9A139251750064BCE6 /* ShaderManagerDemoAppDelegate.h */,
+				DBEAAA9B139251750064BCE6 /* ShaderManagerDemoAppDelegate.m */,
+				DBEAAA9D139251750064BCE6 /* MainWindow.xib */,
+				DBEAAAA0139251750064BCE6 /* Shader.fsh */,
+				DBEAAAA2139251750064BCE6 /* Shader.vsh */,
+				DBEAAAA4139251750064BCE6 /* EAGLView.h */,
+				DBEAAAA5139251750064BCE6 /* EAGLView.m */,
+				DBEAAAA7139251750064BCE6 /* ShaderManagerDemoViewController.h */,
+				DBEAAAA8139251750064BCE6 /* ShaderManagerDemoViewController.m */,
+				DBEAAAAA139251750064BCE6 /* ShaderManagerDemoViewController.xib */,
+				DBEAAA92139251750064BCE6 /* Supporting Files */,
+			);
+			path = ShaderManagerDemo;
+			sourceTree = "<group>";
+		};
+		DBEAAA92139251750064BCE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAAA93139251750064BCE6 /* ShaderManagerDemo-Info.plist */,
+				DBEAAA94139251750064BCE6 /* InfoPlist.strings */,
+				DBEAAA97139251750064BCE6 /* ShaderManagerDemo-Prefix.pch */,
+				DBEAAA98139251750064BCE6 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DBEAAAB2139251CC0064BCE6 /* ShaderManager */ = {
+			isa = PBXGroup;
+			children = (
+				DBEAAAB3139251D90064BCE6 /* Shader.h */,
+				DBEAAAB4139251D90064BCE6 /* Shader.m */,
+				DBEAAAB5139251D90064BCE6 /* ShaderManager.h */,
+				DBEAAAB6139251D90064BCE6 /* ShaderManager.m */,
+				DBEAAAB9139252850064BCE6 /* TestShader.plist */,
+			);
+			name = ShaderManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBEAAA82139251750064BCE6 /* ShaderManagerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBEAAAAF139251750064BCE6 /* Build configuration list for PBXNativeTarget "ShaderManagerDemo" */;
+			buildPhases = (
+				DBEAAA7F139251750064BCE6 /* Sources */,
+				DBEAAA80139251750064BCE6 /* Frameworks */,
+				DBEAAA81139251750064BCE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShaderManagerDemo;
+			productName = ShaderManagerDemo;
+			productReference = DBEAAA83139251750064BCE6 /* ShaderManagerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBEAAA7A139251740064BCE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Developer;
+			};
+			buildConfigurationList = DBEAAA7D139251740064BCE6 /* Build configuration list for PBXProject "ShaderManagerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DBEAAA78139251740064BCE6;
+			productRefGroup = DBEAAA84139251750064BCE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBEAAA82139251750064BCE6 /* ShaderManagerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBEAAA81139251750064BCE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEAAA96139251750064BCE6 /* InfoPlist.strings in Resources */,
+				DBEAAA9F139251750064BCE6 /* MainWindow.xib in Resources */,
+				DBEAAAA1139251750064BCE6 /* Shader.fsh in Resources */,
+				DBEAAAA3139251750064BCE6 /* Shader.vsh in Resources */,
+				DBEAAAAC139251750064BCE6 /* ShaderManagerDemoViewController.xib in Resources */,
+				DBEAAABA139252850064BCE6 /* TestShader.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBEAAA7F139251750064BCE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBEAAA99139251750064BCE6 /* main.m in Sources */,
+				DBEAAA9C139251750064BCE6 /* ShaderManagerDemoAppDelegate.m in Sources */,
+				DBEAAAA6139251750064BCE6 /* EAGLView.m in Sources */,
+				DBEAAAA9139251750064BCE6 /* ShaderManagerDemoViewController.m in Sources */,
+				DBEAAAB7139251D90064BCE6 /* Shader.m in Sources */,
+				DBEAAAB8139251D90064BCE6 /* ShaderManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBEAAA94139251750064BCE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEAAA95139251750064BCE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBEAAA9D139251750064BCE6 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEAAA9E139251750064BCE6 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		DBEAAAAA139251750064BCE6 /* ShaderManagerDemoViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBEAAAAB139251750064BCE6 /* en */,
+			);
+			name = ShaderManagerDemoViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBEAAAAD139251750064BCE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		DBEAAAAE139251750064BCE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		DBEAAAB0139251750064BCE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShaderManagerDemo/ShaderManagerDemo-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "ShaderManagerDemo/ShaderManagerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DBEAAAB1139251750064BCE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ShaderManagerDemo/ShaderManagerDemo-Prefix.pch";
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				INFOPLIST_FILE = "ShaderManagerDemo/ShaderManagerDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBEAAA7D139251740064BCE6 /* Build configuration list for PBXProject "ShaderManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEAAAAD139251750064BCE6 /* Debug */,
+				DBEAAAAE139251750064BCE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBEAAAAF139251750064BCE6 /* Build configuration list for PBXNativeTarget "ShaderManagerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBEAAAB0139251750064BCE6 /* Debug */,
+				DBEAAAB1139251750064BCE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBEAAA7A139251740064BCE6 /* Project object */;
+}
